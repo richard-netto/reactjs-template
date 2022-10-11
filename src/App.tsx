@@ -1,25 +1,30 @@
 import React from 'react';
 import logo from './assets/logo.svg';
-import './App.css';
+import {
+  AppContainerDiv,
+  AppHeader,
+  AppLogoImg,
+  LinkA,
+  TextP,
+} from './App.styles';
 
 const App = (): JSX.Element => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+    <AppContainerDiv>
+      <AppHeader>
+        <AppLogoImg src={logo} alt="logo" />
+        <TextP>
           Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
+        </TextP>
+        <LinkA
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
-    </div>
+        </LinkA>
+      </AppHeader>
+    </AppContainerDiv>
   );
 };
 
